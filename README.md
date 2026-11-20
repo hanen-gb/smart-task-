@@ -12,10 +12,6 @@ pour apprendre **Angular** (frontend) et **Spring Boot** (backend).
 
 > Projet pédagogique : chaque étape est documentée dans [`docs/`](docs/) avant d'être codée.
 
-> 📍 **[BILAN-SMARTTASK.md](BILAN-SMARTTASK.md)** — document de référence à jour :
-> avancement précis, inventaire du code, pièges déjà résolus, prochaine étape.
-> À lire en premier pour reprendre le projet (humain ou nouvelle session IA).
-
 ---
 
 ## 1. En deux phrases
@@ -45,7 +41,7 @@ l'avancement sur un **dashboard**. L'accès est protégé par une
 
 | Fichier | Contenu |
 |---|---|
-| [`docs/00-INSTALLATIONS.md`](docs/00-INSTALLATIONS.md) | **⬅ Commence ici.** Tout ce qu'il faut installer et configurer sur ton PC |
+| [`docs/00-INSTALLATIONS.md`](docs/00-INSTALLATIONS.md) | Prérequis et configuration de l'environnement de développement |
 | [`docs/01-ARCHITECTURE.md`](docs/01-ARCHITECTURE.md) | Architecture globale, découpage en couches, arborescence des dossiers |
 | [`docs/02-MODELE-DONNEES.md`](docs/02-MODELE-DONNEES.md) | Entités, relations, diagramme ER, règles métier |
 | [`docs/03-API-REST.md`](docs/03-API-REST.md) | Contrat d'API : tous les endpoints, formats JSON, codes d'erreur |
@@ -78,8 +74,8 @@ npm start                       # -> http://localhost:4200
 | PostgreSQL (Docker) | `localhost:5433` | `smarttask` / `smarttask` |
 | pgAdmin | http://localhost:5050 | `admin@smarttask.local` / `admin` |
 
-> ⚠️ Le port **5433** (et non 5432) est volontaire : tu as déjà un PostgreSQL 16
-> installé localement qui occupe 5432. Voir `docs/00-INSTALLATIONS.md` § 5.
+> ℹ️ PostgreSQL est exposé sur le port **5433** (et non 5432) pour éviter tout conflit
+> avec une installation PostgreSQL locale. Voir `docs/00-INSTALLATIONS.md`.
 
 ## 5. Arborescence
 
@@ -96,11 +92,15 @@ smarttask/
 
 ## 6. Avancement
 
-- [x] **Étape 1** — Architecture, environnement et documentation
-- [ ] **Étape 2** — Backend : squelette Spring Boot + connexion PostgreSQL
-- [x] **Étape 3** — Frontend : squelette Angular + routing + layout
-- [x] **Étape 4** — Authentification JWT (backend + frontend)
-- [ ] Étapes 5 à 14 → voir [`docs/04-ROADMAP.md`](docs/04-ROADMAP.md)
+- [x] **Étapes 1–4** — Architecture, squelettes backend/frontend, authentification JWT
+- [x] **Étapes 5–6** — Rôles & permissions, CRUD projets et membres
+- [x] **Étapes 7–8** — CRUD tâches, kanban, recherche, filtres, tri, pagination
+- [x] **Étapes 9–10** — Commentaires, notifications événementielles, fichiers joints
+- [x] **Étapes 11–12** — Dashboard & statistiques, tests (unitaires, web-slice, intégration Testcontainers)
+- [ ] **Étape 13** — Conteneurisation complète & déploiement
+- [ ] **Étape 14** — Module IA
+
+Détail des étapes : [`docs/04-ROADMAP.md`](docs/04-ROADMAP.md).
 
 ---
 

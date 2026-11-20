@@ -74,7 +74,7 @@ $javac = Get-Command javac -ErrorAction SilentlyContinue
 if ($javac) {
     Pass "Java (compilateur)" (((& javac -version 2>&1) -join ' ').Trim())
 } else {
-    Fail "Java (compilateur)" "javac introuvable -- tu as un JRE, pas un JDK" "Installer un JDK complet (pas seulement un JRE)"
+    Fail "Java (compilateur)" "javac introuvable -- JRE detecte, pas un JDK" "Installer un JDK complet (pas seulement un JRE)"
 }
 
 if ($env:JAVA_HOME) {

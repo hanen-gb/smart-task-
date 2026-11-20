@@ -161,7 +161,7 @@ confirmation.
 - [ ] Le créateur est automatiquement `OWNER`
 - [ ] Un non-membre ne voit pas le projet
 
-> 🎯 À la fin de cette étape, tu auras **le patron** que tu réappliqueras pour
+> 🎯 Cette étape établit **le patron** réappliqué pour
 > toutes les fonctionnalités suivantes.
 
 ---

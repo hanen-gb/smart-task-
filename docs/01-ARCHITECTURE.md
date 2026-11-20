@@ -158,7 +158,7 @@ Deux écoles s'opposent :
 ```
 
 On choisit **package-by-feature** : tout ce qui concerne les tâches est dans un
-seul dossier. Pour une fonctionnalité, tu ouvres un dossier au lieu de naviguer
+seul dossier. Pour une fonctionnalité, on ouvre un dossier au lieu de naviguer
 entre cinq. Ça passe mieux à l'échelle et c'est ce qui se fait sur les projets
 récents.
 
